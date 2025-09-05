@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analytics | John Isama</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <h2 class="logo">Portfolio</h2>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="data-analyst.html" class="active">Data Analytics</a></li>
+        <li><a href="webdev.html">Web Dev</a></li>
+        <li><a href="iot.html">IoT</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>📊 Data Analytics Projects</h1>
+    <p>Excel • Power BI • Looker Studio • SQL</p>
+</header>
+
+<section class="projects">
+    <article>
+        <h2>Fuel Subsidy Impact Analysis</h2>
+        <p><strong>Problem:</strong> How did subsidy removal affect transport costs?</p>
+        <p><strong>Solution:</strong> Collected before/after data, built a Power BI dashboard.</p>
+        <p><strong>Insight:</strong> Transport costs rose 45% in Lagos, highest among all states.</p>
+        <img src="assets/fuel-dashboard.png" alt="Fuel dashboard screenshot">
+
+        <div class="project-links">
+            <a href="https://github.com/yourusername/fuel-subsidy" target="_blank">GitHub Repo</a>
+            <a href="https://app.powerbi.com/view?r=xyz" target="_blank">Live Dashboard</a>
+        </div>
+    </article>
+
+    <article>
+        <h2>Sales Performance Dashboard</h2>
+        <p><strong>Problem:</strong> Company needed to track monthly sales.</p>
+        <p><strong>Solution:</strong> Built Looker Studio dashboard for regional insights.</p>
+        <p><strong>Insight:</strong> Q2 sales dropped mainly in Abuja (-30%).</p>
+        <img src="assets/sales-dashboard.png" alt="Sales dashboard screenshot">
+
+        <div class="project-links">
+            <a href="https://github.com/yourusername/sales-dashboard" target="_blank">GitHub Repo</a>
+            <a href="https://lookerstudio.google.com/reporting/xyz" target="_blank">Live Dashboard</a>
+        </div>
+    </article>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
