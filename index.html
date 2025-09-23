@@ -1,44 +1,632 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>John Isama | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+	<title>John Isama | Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+
+
 </head>
-<body>
-<nav class="navbar">
-  <h2 class="logo">John Isama</h2>
-  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="data-analyst.html">Data Analytics</a></li>
-    <li><a href="webdev.html">Web Dev</a></li>
-    <li><a href="iot.html">IoT</a></li>
-  </ul>
-</nav>
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
 
-<header>
-  <h1>Hi, I'm <span class="highlight">John Isama</span></h1>
-  <p>Data Analyst • Backend Developer • IoT Enthusiast</p>
-</header>
 
-<section class="intro">
-  <p>I turn <strong>data into insights</strong>, build reliable <strong>backend systems</strong>,
-    and connect <strong>hardware with software</strong> through IoT solutions.</p>
-</section>
 
-<section class="cards">
-  <a href="data-analyst.html" class="card">📊 Data Analytics</a>
-  <a href="webdev.html" class="card">💻 Web Development</a>
-  <a href="iot.html" class="card">🔌 IoT Projects</a>
-</section>
+	<nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
 
-<footer>
-  <p>© 2025 John Isama | <a href="mailto:your@email.com">Contact</a> |
-    <a href="https://linkedin.com/in/your-link">LinkedIn</a></p>
-</footer>
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-<script src="script.js"></script>
-</body>
-</html>
+
+			<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-services">Portfolio</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-portfolio">Projects</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-resume">Resume</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-about">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+	<section class="site-hero" style="background-image: url(images/self1.jpg);" id="section-home" data-stellar-background-ratio="0.5">
+		<div class="container">
+			<div class="row intro-text align-items-center justify-content-center">
+				<div class="col-md-10 text-center pt-5">
+
+					<h1 class="site-heading site-animate">Hello, I'm <strong class="d-block">John Isama</strong></h1>
+					<strong class="d-block text-white text-uppercase letter-spacing"> A Tech professional with hands-on experience in data analysis, web app development, and IT support. I specialize in connecting the digital and physical worlds through IoT, creating integrated solutions that enhance efficiency and user experience.</strong>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Projects section -->
+	<section class="site-section" id="section-portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="section-heading text-center col-md-12">
+					<h2>Featured <strong>Projects</strong></h2>
+				</div>
+			</div>
+			<div class="filters">
+				<ul>
+					<li class="active" data-filter="*">All</li>
+					<li data-filter=".Data">Data Analytics</li>
+					<li data-filter=".software">Software Development</li>
+					<li data-filter=".iot">IoT</li>
+					<li data-filter=".it">IT Support</li>
+				</ul>
+			</div>
+
+			<div class="filters-content">
+				<div class="row grid">
+					<div class="single-portfolio col-sm-4 all software">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/tiqEasy.png" alt="">
+							</div>
+							<a href="images/p1.jpg" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>                                  
+						</div>
+						<div class="p-inner">
+							<h4><a href="https://tiqeasy.com/" class="site-link">TiqEasy</a></h4>
+							<div class="cat">Software Development</div>
+						</div>                                         
+					</div>
+					<div class="single-portfolio col-sm-4 all Data">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/Customer-Feedback.png" alt="">
+							</div>
+							<a href="images/p3.jpg" class="img-pop-up">
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>
+
+						</div>
+						<div class="p-inner">
+							<h4><a href="https://www.linkedin.com/feed/update/urn:li:activity:7254183779554971651?utm_source=share&utm_medium=member_desktop&rcm=ACoAACXFLwcBi7mQIJfd1ga-zkbB90lN2kXj60s" class="site-link">Customer Feedback Analysis</a></h4>
+							<div class="cat">Data Analytics</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-4 all iot">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/iot1.jpg" alt="">
+							</div>
+							<a href="images/p6.jpg" class="img-pop-up">
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>
+						</div>
+						<div class="p-inner">
+							<h4><a href="https://www.linkedin.com/in/isama-john-adeyi/details/projects/" class="site-link">Vehicle Tracker with Remote Kill Switch</a></h4>
+							<div class="cat">IoT</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-4 all software">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/payKiosk.png" alt="">
+							</div>
+							<a href="images/p2.jpg" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>                                  
+						</div>
+						<div class="p-inner">
+							<h4><a href="http://3.14.166.23/" class="site-link">PayKiosk Cloud</a></h4>
+							<div class="cat">Software Development</div>
+						</div>                                         
+					</div>
+					<div class="single-portfolio col-sm-4 all Data">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/public-school.png" alt="">
+							</div>
+							<a href="images/p5.jpg" class="img-pop-up">
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>
+						</div>
+						<div class="p-inner">
+							<h4><a href="https://lookerstudio.google.com/reporting/75091ae1-0afc-425a-ab96-6910418f8ece" class="site-link">Public School Budget Allocation Analysis</a></h4>
+							<div class="cat">Data Analytics</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-4 all software">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/backend-iot1.png" alt="">
+							</div>
+							<a href="images/p2.jpg" class="img-pop-up">
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>
+						</div>
+						<div class="p-inner">
+							<h4><a href="https://github.com/isamaj20/vehicle-tracker-backend-simplify" class="site-link">Real Time GPS Tracking and Remote Kill Switch REST API Backend</a></h4>
+							<div class="cat">Software Development</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-4 all Data">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/videogame.png" alt="">
+							</div>
+							<a href="images/p4.jpg" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>                                
+						</div> 
+						<div class="p-inner">
+							<h4><a href="https://www.linkedin.com/posts/isama-john-adeyi_datavisualization-tableau-videogames-activity-7242797138559029249-LgxO?utm_source=share&utm_medium=member_desktop&rcm=ACoAACXFLwcBi7mQIJfd1ga-zkbB90lN2kXj60s" class="site-link">Analysis of Video Game Sales</a></h4>
+							<div class="cat">Data Analytics</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-4 all Data">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/Covid-19.png" alt="">
+							</div>
+							<a href="images/p5.jpg" class="img-pop-up">
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+								</div>
+							</a>
+						</div>
+						<div class="p-inner">
+							<h4><a href="https://www.linkedin.com/feed/update/urn:li:activity:7242485521300549633/" class="site-link">Covid-19 Vaccine vs Outcome Report</a></h4>
+							<div class="cat">Data Analytics</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Resume: Education and Experience section -->
+
+	<section class="site-section " id="section-resume">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center">
+						<h2>My <strong>Resume</strong></h2>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h2 class="mb-5">Education</h2>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> April 2016.</span>
+						<h3>Bachelor Degree in Computer Science</h3>
+						<p> ● Programming: PHP, Java, C++, JavaScript<br/>
+							● Data Structures & Algorithms<br/>
+							● Databases: SQL, Relational DB Design<br/>
+							● Web Development Fundamentals: HTML, CSS, JavaScript<br/>
+							● Software Development & Version Control (Git)<br/>
+							● Operating Systems & Computer Networks<br/>
+							● Problem Solving & Debugging</p>
+						<span class="school">Benue State University</span>
+					</div>
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> September 2024</span>
+						<h3>Diploma in Data Analytics</h3>
+						<p> ● Data Analysis & Interpretation <br/>
+							● Microsoft Excel (Advanced Functions, Pivot Tables, Charts)<br/>
+							● Power BI (Dashboards, DAX, Data Modeling)<br/>
+							● Data Cleaning & Transformation using Power Query<br/>
+							● Google Looker Studio (Data Visualization & Reporting)<br/>
+							● SQL (Data Retrieval, Joins, Aggregations)</p>
+						<span class="school">Baze University</span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> April 2024.</span>
+						<h3>Git and GitHub Essentials</h3>
+						<p> ● Gained foundational knowledge and hands-on experience using Git and GitHub for version control, code management, and collaborative software development, including branching, merging, pull requests, and conflict resolution.</p>
+						<span class="school">IBM</span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> February 2024</span>
+						<h3>DevOps Essentials</h3>
+						<p> ● Introduced to the foundational culture, principles, and practices of DevOps, including continuous integration, continuous delivery (CI/CD), automation, and collaboration</p>
+						<span class="school">IBM</span>
+					</div>
+					<div class="resume-item mb-4">
+					<span class="date"><span class="icon-calendar"></span> May 2022.</span>
+					<h3>IT Support Professional</h3>
+					<p> ● Gained foundational knowledge in IT support, covering topics such as computer networking, system administration, operating systems (Linux & Windows), troubleshooting, customer service, and security.<br/>
+						● Hands-on experience with command-line tools, binary systems, and ticketing systems, designed for entry-level IT roles.</p>
+					<span class="school">Google</span>
+				</div>
+				</div>
+				<div class="col-md-6">
+
+
+					<h2 class="mb-5">Experience</h2>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> April 2024 - Present</span>
+						<h3>Data Analyst</h3>
+						<p>● Engineered a Kiosk app with structured data capture and performed monthly sales and performance analysis, delivering actionable insights that improved revenue tracking and informed business decisions.</p>
+						<span class="school">Misterich Limited</span>
+					</div>
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> October 2019 - Present</span>
+						<h3>Software Developer</h3>
+						<p> ● Delivered comprehensive desktop and software support to staff and self-service kiosks, while simultaneously managing and optimizing internal backend projects, resulting in enhanced operational efficiency.<br/>
+							● Built and deployed Laravel applications (PayKiosk, internal tools) that eliminated the need for a paid monitoring platform, saving the company approximately ₦2,300,000.00 annually.</p>
+						<span class="school">Misterich Limited</span>
+					</div>
+
+
+                    <div class="resume-item mb-4">
+                        <span class="date"><span class="icon-calendar"></span> December 2024 - February 2025</span>
+                        <h3>Data Analyst Associate</h3>
+                        <p> ● Analyzed user data to derive meaningful insights <br/>
+							● Prepared trend analysis to facilitate decision-making<br/>
+							● Worked on data preprocessing to ensure accuracy and consistency<br/>
+							● Created a dashboard to visualize the analysis effectively and presented it to the stakeholders</p>
+                        <span class="school">Global Excelerate</span>
+                    </div>
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> November 2018 -  September 2019</span>
+						<h3>IT Solution Specialist</h3>
+						<p> ● Redesigned kiosk infrastructure with custom CPUs, eliminating proprietary hardware costs and generating approximately ₦13,000,000.00 in savings across Seven Kiosks while improving performance and scalability.</p>
+						<span class="school">Misterich Limited</span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> March 2023 - Present</span>
+						<h3>Independent ICT Consultant</h3>
+						<p>● Conducts regular maintenance on ICT tools and infrastructure, resulting in increased system uptime and streamlined operations.</p>
+						<span class="school">Gene Bendi Nigeria LTD</span>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- About me section -->
+
+	<section class="site-section" id="section-about">
+		<div class="container">
+			<div class="row mb-5 align-items-center">
+				<div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
+					<img src="images/self1.jpg" alt="Image placeholder" class="img-fluid">
+				</div>
+				<div class="col-lg-5 pl-lg-5">
+					<div class="section-heading">
+						<h2>About <strong>Me</strong></h2>
+					</div>  <p>
+					I am a passionate
+					<strong>Data Analyst, Web Developer, and IoT Enthusiast</strong>.
+					I enjoy transforming raw data into actionable insights, building scalable
+					backend systems, and experimenting with hardware to create connected solutions.
+				</p>
+					<p>
+						With a background in <strong>Power BI, Excel, and Looker Studio and SQL</strong>,
+						I uncover trends that guide smarter decisions. As a <strong>Web Developer</strong>,
+						I specialize in backend development with <strong>Laravel and PHP</strong>,
+						building efficient and user-friendly applications. My love for <strong>IoT</strong>
+						drives me to design systems that integrate hardware and software —
+						connecting devices, data, and people.
+					</p>
+					<p>
+						My goal is to leverage this unique mix of skills to solve
+						<strong>real-world problems</strong>, especially where technology
+						can make everyday life easier and smarter.
+					</p>
+					<p>
+						<a href="#section-contact" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Hire Me</a>
+						<a href="#" class="btn btn-secondary px-4 py-2 btn-sm">Download CV</a>
+					</p>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<section class="site-section pb-0"  id="section-services">
+		<div class="container">
+
+			<div class="row mb-4">
+				<div class="col-md-12">
+					<div class="section-heading text-center">
+						<h2>My <strong>Portfolio</strong></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+
+				<div class="col-md-6 col-lg-4 text-center mb-5">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+						<span class="icon">
+							<span class="icon-presentation"></span>
+						</span>
+						<h3 class="mb-4">Data Analysis</h3>
+						<p>Excel • Power BI • Looker Studio • SQL</p>
+						<p><a href="https://github.com/isamaj20/" class="site-link">Projects and More<i class="icon-chevron-right"></i></a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 text-center mb-5">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+						<span class="icon">
+							<span class="icon-code"></span>
+						</span>
+						<h3 class="mb-4">Software Development</h3>
+						<p>Backend Focus: Laravel • PHP • MySQL • REST APIs</p>
+						<p><a href="#" class="site-link">Projects and More<i class="icon-chevron-right"></i></a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 text-center mb-5">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+						<span class="icon">
+							<span class="icon-insert-template"></span>
+						</span>
+						<h3 class="mb-4">IoT & Tech Support</h3>
+						<p>Passionate about connecting hardware with software & data analytics.</p>
+						<p><a href="#" class="site-link">Projects and More<i class="icon-chevron-right"></i></a></p>
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+	</section>
+
+<!--	<section class="site-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md-12">
+					<div class="section-heading text-center">
+						<h2>Client <strong>Testimonial</strong></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+
+					<div class="block-47 d-flex mb-5">
+						<div class="block-47-image">
+							<img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid">
+						</div>
+						<blockquote class="block-47-quote">
+							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+							<cite class="block-47-quote-author">&mdash; Ethan McCown, CEO <a href="#">XYZ Inc.</a></cite>
+						</blockquote>
+					</div>
+
+				</div>
+				<div class="col-md-6">
+
+					<div class="block-47 d-flex mb-5">
+						<div class="block-47-image">
+							<img src="images/person_2.jpg" alt="Image placeholder" class="img-fluid">
+						</div>
+						<blockquote class="block-47-quote">
+							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+							<cite class="block-47-quote-author">&mdash; Craig Gowen, CEO <a href="#">XYZ Inc.</a></cite>
+						</blockquote>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+
+					<div class="block-47 d-flex mb-5">
+						<div class="block-47-image">
+							<img src="images/person_3.jpg" alt="Image placeholder" class="img-fluid">
+						</div>
+						<blockquote class="block-47-quote">
+							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+							<cite class="block-47-quote-author">&mdash; Ethan McCown, CEO <a href="#">XYZ Inc.</a></cite>
+						</blockquote>
+					</div>
+
+				</div>
+				<div class="col-md-6">
+
+					<div class="block-47 d-flex mb-5">
+						<div class="block-47-image">
+							<img src="images/person_4.jpg" alt="Image placeholder" class="img-fluid">
+						</div>
+						<blockquote class="block-47-quote">
+							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+							<cite class="block-47-quote-author">&mdash; Craig Gowen, CEO <a href="#">XYZ Inc.</a></cite>
+						</blockquote>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</section>-->
+
+<!--	<section class="site-section" id="section-blog">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center">
+						<h2>Blog on <strong>Medium</strong></h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6 col-lg-4 mb-4">
+					<div class="blog-entry">
+						<a href="#"><img src="images/post_1.jpg" alt="Image placeholder" class="img-fluid"></a>
+						<div class="blog-entry-text">
+							<h3><a href="#">Creative Product Designer From Facebook</a></h3>
+							<p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+
+							<div class="meta">
+								<a href="#"><span class="icon-calendar"></span> Aug 7, 2018</a>
+								<a href="#"><span class="icon-bubble"></span> 5 Comments</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4 mb-4">
+					<div class="blog-entry">
+						<a href="#"><img src="images/post_2.jpg" alt="Image placeholder" class="img-fluid"></a>
+						<div class="blog-entry-text">
+							<h3><a href="#">Creative Product Designer From Facebook</a></h3>
+							<p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+
+							<div class="meta">
+								<a href="#"><span class="icon-calendar"></span> Aug 7, 2018</a>
+								<a href="#"><span class="icon-bubble"></span> 5 Comments</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4 mb-4">
+					<div class="blog-entry">
+						<a href="#"><img src="images/post_3.jpg" alt="Image placeholder" class="img-fluid"></a>
+						<div class="blog-entry-text">
+							<h3><a href="#">Creative Product Designer From Facebook</a></h3>
+							<p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+
+							<div class="meta">
+								<a href="#"><span class="icon-calendar"></span> Aug 7, 2018</a>
+								<a href="#"><span class="icon-bubble"></span> 5 Comments</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>-->
+
+	<section class="site-section" id="section-contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center">
+						<h2>Get <strong>In Touch</strong></h2>
+					</div>
+				</div>
+				<div class="col-md-6 pl-md-5">
+					<h3 class="mb-5">My Contact Details</h3>
+					<ul class="site-contact-details">
+						<li>
+							<span class="text-uppercase">Email</span>
+							isamaj20@gmail.com
+						</li>
+						<li>
+							<span class="text-uppercase">Phone</span>
+							+234 806 720 3944
+						</li>
+						<li>
+							<span class="text-uppercase">Address</span>
+							Abuja, Nigeria <br>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-6 pl-md-5">
+					<h3 class="mb-5"></h3>
+					<ul class="site-contact-details">
+						<li>
+							<span class="text-uppercase">GitHub</span>
+							<a href="https://github.com/isamaj20"><i>View repos</i></a>
+						</li>
+						<li>
+							<span class="text-uppercase">Portfolio</span>
+							<a href="https://isamaj20.github.io/portfolio/"><i>Visit here</i></a>
+						</li>
+						<li>
+							<span class="text-uppercase">LinkedIn</span>
+							<a href="https://www.linkedin.com/in/isama-john-adeyi/"><i>View profile</i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="site-footer">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md-12 text-center">
+					<p>
+						<a href="https://github.com/isamaj20" class="social-item"><span class="icon-github2"></span></a>
+						<a href="https://www.linkedin.com/in/isama-john-adeyi/" class="social-item"><span class="icon-linkedin2"></span></a>
+						<a href="https://x.com/AwesomeNXT" class="social-item"><span class="icon-twitter"></span></a>
+						<a href="#" class="social-item"><span class="icon-instagram2"></span></a>
+					</p>
+				</div>
+			</div>
+			<div class="row mb-5">
+				<p class="col-12 text-center">
+					Copyright &copy; <script>document.write(new Date().getFullYear());</script> John Isama | Portfolio
+				</p>
+			</div>
+			
+		</div>
+	</footer>
+	<script src="js/vendor/jquery.min.js"></script>
+	<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/vendor/popper.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+
+	<script src="js/vendor/jquery.easing.1.3.js"></script>
+
+	<script src="js/vendor/jquery.stellar.min.js"></script>
+	<script src="js/vendor/jquery.waypoints.min.js"></script>
+
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+	<script src="js/custom.js"></script>
+
+	<!-- Google Map -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    	<script src="js/google-map.js"></script> -->
+
+    </body>
+    </html>
